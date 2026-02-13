@@ -1,15 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Items from "./pages/Item.jsx";
-import ItemDetail from "./pages/ItemDetails.jsx";
- 
-function App() {
+import ProfilePage from "./pages/ProfilePage";
+
+export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Items />} />
-      <Route path="/items" element={<Items />} />
-      <Route path="/items/:id" element={<ItemDetail />} />
+      <Route path="/profile" element={<ProfilePage />} />
     </Routes>
   );
 }
- 
-export default App;
